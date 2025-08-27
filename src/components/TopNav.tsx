@@ -22,7 +22,7 @@ export default function TopNav() {
             href={href}
             className={`rounded-md px-3 py-3 text-sm font-medium ${
               active
-                ? "text-yellow-400"
+                ? "text-accent"
                 : "text-neutral-400 hover:text-neutral-200"
             }`}
           >
