@@ -20,7 +20,8 @@ export default function Sidebar() {
         </div>
       </div>
 
-      <hr className="my-6 border-neutral-800" />
+      {/* Divider */}
+      <hr className="my-6 border-neutral-600" />
 
       <dl className="space-y-3 text-sm">
         <div className="flex items-center gap-3">
