@@ -1,13 +1,20 @@
 import ProjectCard from "@/components/ProjectCard";
 
 const projects = [
-  { title: "Proj1", tag: "Web design" },
-  { title: "Proj2", tag: "Applications" },
-  { title: "Proj3", tag: "Web development" },
-  { title: "Proj4", tag: "Automation" },
-  { title: "Proj5", tag: "Internal app" },
-  { title: "Proj6", tag: "AI/LLM" },
+  { title: "Proj1", tag: "Web design", link: "/not-linked"},
+  { title: "Proj2", tag: "Applications", link: "/not-linked" },
+  { title: "Proj3", tag: "Web development", link: "/not-linked" },
+  { title: "Proj4", tag: "Automation", link: "/not-linked" },
+  { title: "Proj5", tag: "Internal app", link: "/not-linked" },
+  { title: "Proj6", tag: "AI/LLM", link: "/not-linked" },
 ];
+
+const tags = [
+  "All",
+  "Web design",
+  "Applications",
+  "Web development"
+]
 
 export default function ProjectsPage() {
     // write a function to retrieve set of tags
@@ -18,7 +25,7 @@ export default function ProjectsPage() {
 
       {/* Filter tabs (static for now) */}
       <div className="flex gap-2 text-sm">
-        {["All", "Web design", "Applications", "Web development"].map((t, i) => (
+        {tags.map((t, i) => (
           <button
             key={t}
             className={`rounded-full border px-3 py-1 ${
@@ -35,7 +42,7 @@ export default function ProjectsPage() {
       {/* Grid */}
       <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
         {projects.map((p) => (
-          <ProjectCard key={p.title} title={p.title} tag={p.tag} />
+          <ProjectCard key={p.title} title={p.title} tag={p.tag} link={p.link} />
         ))}
       </div>
     </section>
