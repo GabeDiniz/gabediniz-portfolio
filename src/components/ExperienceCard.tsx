@@ -1,6 +1,6 @@
 type Props = { title: string; tag: string, link: string };
 
-export default function ExperienceCard({ title, tag, link }: Props) {
+export default function ExperienceCard({ title, location, startDate, endDate, technologies, highlights }: Props) {
   return (
     <article className="group overflow-hidden rounded-2xl border border-neutral-800 bg-neutral-900/50 hover:cursor-pointer">
       <div className="aspect-[16/10] w-full bg-neutral-800/60" />
