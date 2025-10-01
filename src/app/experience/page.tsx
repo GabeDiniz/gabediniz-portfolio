@@ -34,7 +34,7 @@ export default function ExperiencesPage() {
       <h1 className="text-3xl font-semibold tracking-tight">Experiences</h1>
 
       {/* Filter tabs (static for now) */}
-      <div className="flex gap-2 text-sm">
+      {/* <div className="flex gap-2 text-sm">
         {tags.map((t, i) => (
           <button
             key={t}
@@ -47,13 +47,13 @@ export default function ExperiencesPage() {
             {t}
           </button>
         ))}
-      </div>
+      </div> */}
 
       {/* Grid */}
       <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
         {Experiences.map((exp) => (
           // remember to update key
-          <ExperienceCard key={exp.title} title={exp.title} location={exp.location} startDate={exp.startDate endDate={exp.endDate} technologies={exp.technologies highlights={exp.highlights />
+          <ExperienceCard key={exp.title} company={exp.company} title={exp.title} location={exp.location} startDate={exp.startDate} endDate={exp.endDate} technologies={exp.technologies} highlights={exp.highlights} />
         ))}
       </div>
     </section>
