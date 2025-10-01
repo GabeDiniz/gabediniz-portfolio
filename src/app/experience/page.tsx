@@ -1,12 +1,29 @@
 import ExperienceCard from "@/components/ExperienceCard";
 
 const Experiences = [
-  { title: "Proj1", tag: "Web design", link: "/not-linked"},
-  { title: "Proj2", tag: "Applications", link: "/not-linked" },
-  { title: "Proj3", tag: "Web development", link: "/not-linked" },
-  { title: "Proj4", tag: "Automation", link: "/not-linked" },
-  { title: "Proj5", tag: "Internal app", link: "/not-linked" },
-  { title: "Proj6", tag: "AI/LLM", link: "/not-linked" },
+  {
+    company: "OpenText",
+    title: "Build Engineer",
+    location: "Waterloo",
+    startDate: "Jan 2023",
+    endDate: "Present",
+    technologies: [
+      "Python",
+      "Flask",
+      "GitLab",
+      "Git",
+      "REST API",
+      "YAML",
+      "CI/CD",
+      "System Hooks"
+    ],
+    highlights: [
+      "Designed and deployed a Flask-based internal API service to consume GitLab System Webhooks, asynchronously process team access events, and enforce access policies on personal repositories using a threaded queue-based architecture.",
+      "Led the migration of over 1,000+ projects from Perforce to GitLab, leveraging CI pipelines, YAML, and Python to ensure the complete preservation of all branches and history.",
+      "Collaborated with multiple development teams to streamline processes and resolve build errors. Developed Python scripts utilizing GitLab/TeamCity/Jira REST API, reducing branch creation, build configuration, and release candidate setup time from 5+ minutes to < 15 seconds, eliminating potential manual errors.",
+      "Deployed all automation scripts to Waterloo, Bangalore, and Hyderabad teams, significantly enhancing productivity and consistency across global teams."
+    ]
+  }
 ];
 
 const tags = [
@@ -42,7 +59,7 @@ export default function ExperiencesPage() {
       {/* Grid */}
       <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
         {Experiences.map((p) => (
-          <ExperienceCard key={p.title} title={p.title} tag={p.tag} link={p.link} />
+          <ExperienceCard key={p.title} title={p.title} tag={p.title} link={p.title} />
         ))}
       </div>
     </section>
