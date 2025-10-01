@@ -3,7 +3,7 @@ import { Mail, CalendarDays, MapPin } from "lucide-react";
 
 export default function Sidebar() {
   return (
-    <div className="rounded-2xl border border-neutral-800 bg-primary-dark-bg p-6">
+    <div className="rounded-2xl border border-neutral-700 bg-primary-dark-bg p-6">
       <div className="flex flex-col items-center gap-4">
         <div className="overflow-hidden rounded-2xl ring-1 ring-neutral-800">
           <Image
@@ -21,7 +21,7 @@ export default function Sidebar() {
       </div>
 
       {/* Divider */}
-      <hr className="my-6 border-neutral-600" />
+      <hr className="my-6 border-br-neutral" />
 
       <dl className="space-y-3 text-sm">
         <div className="flex items-center gap-3">

@@ -7,8 +7,9 @@
 
 @theme {
     --color-primary-dark-bg: #212122;
-    --color-accent: #ffc300; /* Single custom color */
+    --color-accent: #ffc300;
     --color-primary-600: #cc4527;
+    --color-br-neutral: #525252;
 }
 
 

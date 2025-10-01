@@ -33,7 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </aside>
 
             {/* Right content */}
-            <main className="lg:col-span-9 2xl:col-span-8 rounded-2xl border border-neutral-800 bg-neutral-950/60 overflow-hidden">
+            <main className="lg:col-span-9 2xl:col-span-8 rounded-2xl border border-neutral-700 bg-primary-dark-bg overflow-hidden">
               <TopNav />
               <div className="p-6 lg:p-8">{children}</div>
             </main>
