@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Gabe Diniz",
   description: "Software Engineer • DevOps • Automation",
-  icons: { icon: "/avatar.png" },
+  icons: { icon: "/avatar-icon.png" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
