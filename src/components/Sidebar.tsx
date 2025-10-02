@@ -32,7 +32,7 @@ export default function Sidebar() {
         </div>
         <div className="flex items-center gap-3">
           <CalendarDays className="h-4 w-4 text-neutral-400" />
-          <span className="text-neutral-300">June 28, 1993</span>
+          <span className="text-neutral-300">October 25, 2000/</span>
         </div>
         <div className="flex items-center gap-3">
           <MapPin className="h-4 w-4 text-neutral-400" />
