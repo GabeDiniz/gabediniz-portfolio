@@ -23,6 +23,25 @@ const Experiences = [
       "Collaborated with multiple development teams to streamline processes and resolve build errors. Developed Python scripts utilizing GitLab/TeamCity/Jira REST API, reducing branch creation, build configuration, and release candidate setup time from 5+ minutes to < 15 seconds, eliminating potential manual errors.",
       "Deployed all automation scripts to Waterloo, Bangalore, and Hyderabad teams, significantly enhancing productivity and consistency across global teams."
     ]
+  },
+  {
+    company: "Konfer x HawkHacks",
+    title: "Software Engineer (Startup)",
+    location: "Hybrid",
+    startDate: "Oct 2023",
+    endDate: "Present",
+    technologies: [
+      "Vite",
+      "TypeScript",
+      "Tailwind",
+      "Firebase",
+      "Docker"
+    ],
+    highlights: [
+      "Developed and launched a Hackathon website using Vite, Tailwind CSS, and TypeScript, which provided an interactive and user-friendly platform for participants, resulting in a seamless experience and increased engagement during the event.",
+      "Engineered a comprehensive dashboard using Firebase to offer real-time data insights and management capabilities. This dashboard was used by over 1000+ users, enhancing our ability to monitor and analyze event metrics effectively.",
+      "Collaborated with a cross-functional team to implement scalable web solutions, ensuring high performance and responsiveness. This effort significantly improved user satisfaction and contributed to a higher retention rate during and after the Hackathon."
+    ]
   }
 ];
 
@@ -51,7 +70,7 @@ export default function ExperiencesPage() {
 
       {/* Grid */}
       {/* <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3"> */}
-      <div className="">
+      <div className="grid gap-2">
         {Experiences.map((exp) => (
           // remember to update key
           <ExperienceCard key={exp.title} company={exp.company} title={exp.title} location={exp.location} startDate={exp.startDate} endDate={exp.endDate} technologies={exp.technologies} highlights={exp.highlights} />
