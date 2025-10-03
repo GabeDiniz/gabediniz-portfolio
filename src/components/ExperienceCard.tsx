@@ -38,10 +38,10 @@ const ExperienceCard = ({ title, company, location, startDate, endDate, technolo
       onClick={handleToggle}
       onKeyDown={handleKeyDown}
     >
-      <div className="aspect-[16/10] w-full bg-neutral-800/60 flex items-center justify-center select-none pointer-events-none">
-        {/* Company logo or icon could go here */}
-      </div>
-      <div className="p-4">
+      {/* <div className="aspect-[16/10] w-full bg-neutral-800/60 flex items-center justify-center select-none pointer-events-none">
+        Company logo or icon could go here
+      </div> */}
+      <div className="p-4 select-none pointer-events-none">
         <div className="flex items-center justify-between">
           <h3 className="font-medium group-hover:text-yellow-400 transition-colors">
             {title}
