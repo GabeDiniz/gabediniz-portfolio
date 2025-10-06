@@ -1,4 +1,4 @@
-export const Experiences =
+export const experiences =
     [
         {
             company: "OpenText",

@@ -1,5 +1,5 @@
 import ExperienceCard from "@/components/ExperienceCard";
-import { Experiences } from "@/data/experiences";
+import { experiences } from "@/data/experiences";
 
 export default function ExperiencesPage() {
     // write a function to retrieve set of tags
@@ -27,7 +27,7 @@ export default function ExperiencesPage() {
       {/* Grid */}
       {/* <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3"> */}
       <div className="grid gap-2">
-        {Experiences.map((exp) => (
+        {experiences.map((exp) => (
           // remember to update key
           <ExperienceCard key={exp.title} company={exp.company} title={exp.title} location={exp.location} startDate={exp.startDate} endDate={exp.endDate} technologies={exp.technologies} highlights={exp.highlights} />
         ))}
