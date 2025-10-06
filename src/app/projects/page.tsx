@@ -34,7 +34,7 @@ export default function ProjectsPage() {
       {/* Grid */}
       <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
         {projects.map((p) => (
-          <ProjectCard key={p.title} title={p.title} tag={p.tag} link={p.link} />
+          <ProjectCard key={p.title} title={p.title} tag={p.tag} link={p.link} image={p.image} />
         ))}
       </div>
     </section>
