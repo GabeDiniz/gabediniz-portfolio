@@ -42,5 +42,18 @@ export const experiences =
             "Engineered a comprehensive dashboard using Firebase to offer real-time data insights and management capabilities. This dashboard was used by over 1000+ users, enhancing our ability to monitor and analyze event metrics effectively.",
             "Collaborated with a cross-functional team to implement scalable web solutions, ensuring high performance and responsiveness. This effort significantly improved user satisfaction and contributed to a higher retention rate during and after the Hackathon."
             ]
+        },
+        {
+            company: "OpenText",
+            title: "Fullstack Software Engineer Intern",
+            location: "Waterloo",
+            startDate: "Sep 2022",
+            endDate: "Dec 2022",
+            technologies: ["Next.js", "SpringBoot", "Java", "TypeScript", "SQL"],
+            highlights: [
+            "Designed effective and scalable software for a Case Management Fullstack Application.",
+            "Resolved 20+ bug fixes and feature requests reported by product owners and customers.",
+            "Developed new features consuming RESTful APIs using TypeScript, Next.js/React.js, and SQL."
+            ]
         }
     ];
