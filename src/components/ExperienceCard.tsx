@@ -1,5 +1,6 @@
 'use client'
 import React, { useState, useCallback } from "react";
+import Image from "next/image";
 
 type Props = {
   company: string;
@@ -9,9 +10,10 @@ type Props = {
   endDate: string;
   technologies: string[];
   highlights: string[];
+  logo: string;
 };
 
-const ExperienceCard = ({ title, company, location, startDate, endDate, technologies, highlights }: Props) => {
+const ExperienceCard = ({ title, company, location, startDate, endDate, technologies, highlights, logo }: Props) => {
   const [open, setOpen] = useState(false);
 
   // Toggle dropdown with click or keyboard (Enter/Space)
@@ -40,12 +42,20 @@ const ExperienceCard = ({ title, company, location, startDate, endDate, technolo
     >
       <div className="p-4 select-none pointer-events-none">
         <div className="flex items-center justify-between">
-      {/* <div className="aspect-[16/10] w-full bg-neutral-800/60 flex items-center justify-center select-none pointer-events-none">
-        Company logo or icon could go here
-      </div> */}
-          <h3 className="font-medium group-hover:text-yellow-400 transition-colors">
-            {title}
-          </h3>
+          <div className="flex items-center gap-3">
+            <div>
+              <Image
+                src={logo}
+                alt={company}
+                width={20}
+                height={20}
+                className="object-cover h-full w-full rounded-full"
+              />
+            </div>
+            <h3 className="font-medium group-hover:text-yellow-400 transition-colors">
+              {title}
+            </h3>
+          </div>
           <span className="text-xs text-neutral-400 ml-2">{company}</span>
         </div>
         <div className="flex items-center justify-between mt-1">

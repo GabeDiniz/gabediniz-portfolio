@@ -11,7 +11,7 @@ export default function ExperiencesPage() {
       <div className="grid gap-2">
         {experiences.map((exp) => (
           // remember to update key
-          <ExperienceCard key={exp.title} company={exp.company} title={exp.title} location={exp.location} startDate={exp.startDate} endDate={exp.endDate} technologies={exp.technologies} highlights={exp.highlights} />
+          <ExperienceCard key={exp.title} company={exp.company} title={exp.title} location={exp.location} startDate={exp.startDate} endDate={exp.endDate} technologies={exp.technologies} highlights={exp.highlights} logo={exp.logo} />
         ))}
       </div>
     </section>
