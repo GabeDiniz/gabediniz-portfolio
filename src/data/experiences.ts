@@ -3,7 +3,7 @@ export const experiences =
         {
             company: "OpenText",
             title: "Build Engineer",
-            location: "Waterloo",
+            location: "Waterloo (Hybrid)",
             startDate: "Jan 2023",
             endDate: "Present",
             technologies: [
@@ -28,7 +28,7 @@ export const experiences =
         {
             company: "Konfer Inc.",
             title: "Software Engineer (Startup)",
-            location: "Hybrid",
+            location: "Waterloo (Hybrid)",
             startDate: "Oct 2023",
             endDate: "Present",
             technologies: [
@@ -48,7 +48,7 @@ export const experiences =
         {
             company: "OpenText",
             title: "Fullstack Software Engineer Intern",
-            location: "Waterloo",
+            location: "Waterloo (Hybrid)",
             startDate: "Sep 2022",
             endDate: "Dec 2022",
             technologies: [
