@@ -1,15 +1,8 @@
 import ProjectCard from "@/components/ProjectCard";
 import { projects } from "@/data/projects";
 
-const tags = [
-  "All",
-  "Web design",
-  "Applications",
-  "Web development"
-]
-
 export default function ProjectsPage() {
-    // write a function to retrieve set of tags
+  const tags = projects.map(p => p.tag);
 
   return (
     <section className="space-y-6">
