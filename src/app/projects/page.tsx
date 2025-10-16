@@ -7,6 +7,7 @@ export default function ProjectsPage() {
   return (
     <section className="space-y-6">
       <h1 className="text-3xl font-semibold tracking-tight">Projects</h1>
+      <p>Each project has a linked GitHub repository with a README to further explain the project.</p>
 
       {/* Filter tabs (static for now) */}
       <div className="flex gap-2 text-sm">
