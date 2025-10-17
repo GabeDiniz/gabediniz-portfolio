@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Mail, CalendarDays, MapPin } from "lucide-react";
+import { FaGithub, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 
 export default function Sidebar() {
   return (
@@ -18,6 +19,11 @@ export default function Sidebar() {
           <h2 className="text-xl font-semibold">Gabe Diniz</h2>
           <p className="text-sm text-neutral-400">Software Engineer • DevOps</p>
         </div>
+      </div>
+      <div className="mt-4 flex justify-center gap-4 text-neutral-400">
+        <a className="hover:scale-115 " href="https://github.com/GabeDiniz" target="_blank"><FaGithub /></a>
+        <a className="hover:scale-115 " href="https://www.linkedin.com/in/gabrielsdiniz/" target="_blank"><FaLinkedinIn /></a>
+        <a className="hover:scale-115 " href="https://www.youtube.com/@gsdiniz" target="_blank"><FaYoutube /></a>
       </div>
 
       {/* Divider */}
