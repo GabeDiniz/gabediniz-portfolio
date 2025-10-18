@@ -20,10 +20,16 @@ export default function Sidebar() {
           <p className="text-sm text-neutral-400">Software Engineer • DevOps</p>
         </div>
       </div>
-      <div className="mt-4 flex justify-center gap-4 text-neutral-400">
-        <a className="hover:scale-115 " href="https://github.com/GabeDiniz" target="_blank"><FaGithub /></a>
-        <a className="hover:scale-115 " href="https://www.linkedin.com/in/gabrielsdiniz/" target="_blank"><FaLinkedinIn /></a>
-        <a className="hover:scale-115 " href="https://www.youtube.com/@gsdiniz" target="_blank"><FaYoutube /></a>
+      <div className="mt-4 flex justify-center gap-4 text-neutral-400 text-lg">
+        <a className="transform transition-transform duration-200 hover:scale-125" href="https://github.com/GabeDiniz" target="_blank">
+          <FaGithub />
+        </a>
+        <a className="transform transition-transform duration-200 hover:scale-125" href="https://www.linkedin.com/in/gabrielsdiniz/" target="_blank">
+          <FaLinkedinIn />
+        </a>
+        <a className="transform transition-transform duration-200 hover:scale-125" href="https://www.youtube.com/@gsdiniz" target="_blank">
+          <FaYoutube />
+        </a>
       </div>
 
       {/* Divider */}
