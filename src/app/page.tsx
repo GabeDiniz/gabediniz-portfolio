@@ -10,7 +10,7 @@ export default function AboutPage() {
         <div className="rounded-xl border border-neutral-800 bg-neutral-900/60 p-4">
           <h3 className="font-medium">What I do</h3>
           <p className="text-neutral-400 text-sm mt-1">
-            GitLab automation, Artifactory governance, internal platforms, helpful bots, and more!
+            Fullstack development, automation, web development, helpful bots, and more!
           </p>
         </div>
         <div className="rounded-xl border border-neutral-800 bg-neutral-900/60 p-4">
