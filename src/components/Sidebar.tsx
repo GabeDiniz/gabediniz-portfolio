@@ -21,13 +21,13 @@ export default function Sidebar() {
         </div>
       </div>
       <div className="mt-4 flex justify-center gap-4 text-neutral-400 text-lg">
-        <a className="transform transition-transform duration-200 hover:scale-125" href="https://github.com/GabeDiniz" target="_blank">
+        <a className="transform transition-transform duration-200 hover:scale-125 hover:text-accent" href="https://github.com/GabeDiniz" target="_blank">
           <FaGithub />
         </a>
-        <a className="transform transition-transform duration-200 hover:scale-125" href="https://www.linkedin.com/in/gabrielsdiniz/" target="_blank">
+        <a className="transform transition-transform duration-200 hover:scale-125 hover:text-accent" href="https://www.linkedin.com/in/gabrielsdiniz/" target="_blank">
           <FaLinkedinIn />
         </a>
-        <a className="transform transition-transform duration-200 hover:scale-125" href="https://www.youtube.com/@gsdiniz" target="_blank">
+        <a className="transform transition-transform duration-200 hover:scale-125 hover:text-accent" href="https://www.youtube.com/@gsdiniz" target="_blank">
           <FaYoutube />
         </a>
       </div>
