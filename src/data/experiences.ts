@@ -2,6 +2,7 @@ export const experiences =
     [
         {
             company: "OpenText",
+            logo: "/experience/ot-logo.jpeg",
             title: "Build Engineer",
             location: "Waterloo (Hybrid)",
             startDate: "Jan 2023",
@@ -23,10 +24,10 @@ export const experiences =
                 "Collaborated with multiple development teams to streamline processes and resolve build errors. Developed Python scripts utilizing GitLab/TeamCity/Jira REST API, reducing branch creation, build configuration, and release candidate setup time from 5+ minutes to < 15 seconds, eliminating potential manual errors.",
                 "Deployed all automation scripts to Waterloo, Bangalore, and Hyderabad teams, significantly enhancing productivity and consistency across global teams."
             ],
-            logo: "/experience/ot-logo.jpeg"
         },
         {
             company: "Konfer Inc.",
+            logo: "/experience/konfer-logo.jpeg",
             title: "Software Engineer (Startup)",
             location: "Waterloo (Hybrid)",
             startDate: "Oct 2023",
@@ -43,10 +44,10 @@ export const experiences =
                 "Engineered a comprehensive dashboard using Firebase to offer real-time data insights and management capabilities. This dashboard was used by over 1000+ users, enhancing our ability to monitor and analyze event metrics effectively.",
                 "Collaborated with a cross-functional team to implement scalable web solutions, ensuring high performance and responsiveness. This effort significantly improved user satisfaction and contributed to a higher retention rate during and after the Hackathon."
             ],
-            logo: "/experience/konfer-logo.jpeg"
         },
         {
             company: "OpenText",
+            logo: "/experience/ot-logo.jpeg",
             title: "Fullstack Software Engineer Intern",
             location: "Waterloo (Hybrid)",
             startDate: "Sep 2022",
@@ -63,6 +64,5 @@ export const experiences =
                 "Resolved 20+ bug fixes and feature requests reported by product owners and customers.",
                 "Developed new features consuming RESTful APIs using TypeScript, Next.js/React.js, and SQL."
             ],
-            logo: "/experience/ot-logo.jpeg"
         }
     ];
