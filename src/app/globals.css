@@ -5,13 +5,13 @@
   --foreground: #171717;
 }
 
-@theme {
-    --color-primary-dark-bg: #212122;
-    --color-accent: #ffc300;
-    --color-primary-600: #cc4527;
-    --color-br-neutral: #525252;
+/* Dark mode media query */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
 }
-
 
 @theme inline {
   --color-background: var(--background);
@@ -20,12 +20,18 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Custom Tailwind colors */
+@theme {
+    /* Card background color */
+    --color-primary-dark-bg: #212122;
+    /* Yellow accent color */
+    --color-accent: #ffc300;
+    /* Red accent color - unused */
+    --color-primary-600: #cc4527;
+    /* <br /> color accent lines */
+    --color-br-neutral: #525252;
 }
+
 
 body {
   background: var(--background);
