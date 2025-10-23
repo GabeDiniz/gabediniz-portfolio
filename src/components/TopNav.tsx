@@ -12,7 +12,11 @@ const links = [
 export default function TopNav() {
   const pathname = usePathname();
   return (
-    <nav className="flex items-center gap-1 border-b border-neutral-800 px-4 lg:px-6">
+    <nav
+      role="navigation"
+      aria-label="Primary"
+      className="flex items-center gap-2 border-b border-neutral-800 px-4 lg:px-6"
+    >
       {links.map(({ href, label }) => {
         const active =
           (href === "/" && pathname === "/") ||
@@ -21,19 +25,18 @@ export default function TopNav() {
           <Link
             key={href}
             href={href}
-            className={`rounded-md px-3 py-3 text-sm font-medium ${
-              active
-                ? "text-accent"
-                : "text-neutral-400 hover:text-neutral-200"
-            }`}
+            aria-current={active ? "page" : undefined}
+            className={`relative rounded-sm px-4 py-2 text-sm font-medium transition-colors duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2
+              ${
+                active
+                  ? "text-accent border-b-2 border-accent"
+                  : "text-neutral-400 hover:text-neutral-200 hover:bg-neutral-900/40"
+              }`}
           >
             {label}
           </Link>
         );
       })}
-      <div className="ml-auto py-3 px-2 text-xs text-neutral-500">
-        {/* Right-side space for theme toggle/search later */}
-      </div>
     </nav>
   );
 }
