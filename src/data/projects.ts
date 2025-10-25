@@ -5,5 +5,5 @@ export const projects =
         { title: "SpurHacks Dashboard", tag: "Application", link: "https://github.com/KonferCA/SpurHacks-Dashboard", image: "/projects/spurhacks-dashboard.png" },
         { title: "SpurHacks Website", tag: "Website", link: "https://github.com/KonferCA/SpurHacks", image: "/projects/spurhacks-website.png" },
         { title: "Spur Innovation", tag: "Website", link: "https://github.com/KonferCA/SPUR-Innovation", image: "/projects/spur-innovation-website.png" },
-        { title: "Fullstack Portfolio", tag:"Website", link: "https://github.com/GabeDiniz/modern_portfolio", image: "/avatar.png"}
+        { title: "Fullstack Portfolio", tag:"Website", link: "https://github.com/GabeDiniz/modern_portfolio", image: "/projects/modern-portfolio.png"}
     ]
